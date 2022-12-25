@@ -54,17 +54,21 @@ print(haechan_score)
 
 
 
-n=3  
+def test(): 
+    l = []
+    for i in range(1000):
+        l = l + [i]
+    print(l)    
+    
+def test2():
+    l = []
+    for i in range(1000):
+        l.append(i) 
 
-a=5
-b=6
-c=10 
+def test3():
+    l = [i for i in range(1000)]
 
-for i in range(n):
-    print(f"i={i}")
-    for j in range(n):
-        print(f"j={j}")
-        x = i * i
-        y = j * j
-        z = i * j
+def test4(): 
+    l = list(range(1000))
 
+print(test())
